@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="10sp"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal">
+
+   <TextView
+       android:drawableTint="@color/colorAccent"
+       android:textColor="@color/colorAccent"
+       android:textSize="20dp"
+       android:gravity="center_vertical"
+       android:textStyle="bold"
+       android:drawablePadding="10dp"
+       android:drawableLeft="@drawable/ic_arrow_back_black_24dp"
+       android:text="New Product"
+       android:id="@+id/title_id"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"/>
+
+
+</LinearLayout>

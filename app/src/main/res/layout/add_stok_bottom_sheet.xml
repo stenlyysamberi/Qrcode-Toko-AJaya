@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/add_Stok_bottom_sheet"
+    android:background="@drawable/bottom_sheet_background"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+
+        android:textAlignment="center"
+        android:layout_margin="20sp"
+        android:textSize="20sp"
+        android:textColor="@color/colorAccent"
+        android:text="Add Stok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <View
+        android:layout_marginRight="12sp"
+        android:layout_marginLeft="12sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:background="@color/hit"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+        <RelativeLayout
+            android:layout_marginLeft="12sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+
+                android:src="@drawable/ic_baseline_fastfood_24"
+                android:id="@+id/error_jar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+            <LinearLayout
+                android:layout_marginRight="12sp"
+                android:layout_marginLeft="12sp"
+                android:layout_centerInParent="true"
+                android:layout_toRightOf="@+id/error_jar"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="QUANTITY"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/jumlah_tamba"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="ex: 5"
+                    android:inputType="number"
+                    android:padding="12dp"
+                    android:textColor="@color/colorAccent"
+                    android:textColorHint="@color/hit" />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:layout_marginTop="12sp"
+        android:layout_marginBottom="12sp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:textColor="@color/colorWhite"
+            android:id="@+id/btn_add_stok"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="15sp"
+            android:layout_marginRight="12sp"
+            android:layout_marginBottom="12sp"
+            android:background="@drawable/btn"
+            android:padding="12sp"
+            android:text="OK"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

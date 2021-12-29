@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorBackround"
+    android:layout_height="match_parent"
+    tools:context=".MyProfile">
+
+    <include layout="@layout/header"
+        android:id="@+id/thely"/>
+
+    <ScrollView
+        android:layout_below="@+id/thely"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/main_header_profil"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <RelativeLayout
+            android:id="@+id/second_header_profil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:padding="12dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.cardview.widget.CardView
+                    app:cardBackgroundColor="@color/colorBackround"
+                    android:layout_margin="12px"
+                    app:cardCornerRadius="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp">
+
+                    <LinearLayout
+
+                        android:gravity="center_horizontal|center_vertical"
+                        android:layout_marginLeft="20sp"
+                        android:layout_gravity="left"
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/card_img"
+                            app:cardCornerRadius="80sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:scaleType="centerCrop"
+                                android:id="@+id/image_profil_saya"
+                                android:src="@drawable/oip"
+                                android:layout_width="90sp"
+                                android:layout_height="90sp">
+                            </ImageView>
+                        </androidx.cardview.widget.CardView>
+
+                        <RelativeLayout
+                            android:paddingLeft="12px"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent">
+
+
+                            <TextView
+                                android:id="@+id/nama_lengkap_profil_saya"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:gravity="center"
+                                android:text="Stenly Samberi"
+                                android:textColor="@color/design_default_color_on_secondary"
+                                android:textSize="17sp"
+                                android:textStyle="bold">
+
+                            </TextView>
+
+
+                            <TextView
+                                android:id="@+id/alamat_rumah"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/nama_lengkap_profil_saya"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginTop="2sp"
+                                android:gravity="center"
+                                android:text="puberq@gamil.com"
+                                android:textColor="@color/hit"
+                                android:textSize="12sp">
+
+                            </TextView>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:id="@+id/edit_profil"
+                                android:layout_marginRight="12px"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/ic_baseline_more_vert_24"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                        </RelativeLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/second_header_profil"
+            android:layout_marginLeft="12sp"
+            android:layout_marginTop="1dp"
+            android:layout_marginRight="12sp">
+
+            <TextView
+                android:id="@+id/profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12sp"
+                android:text="Akun"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tx_edit_profil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/profile"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="12sp"
+                android:layout_marginRight="20sp"
+                android:drawableLeft="@drawable/ic_edit_profile"
+                android:drawableRight="@drawable/ic_more"
+                android:drawablePadding="12sp"
+                android:gravity="center_vertical"
+                android:onClick="edit_phone"
+                android:text="Phone"
+                android:textColor="@color/colorAccent">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/tx_ubah_psw"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tx_edit_profil"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="12sp"
+                android:layout_marginTop="15sp"
+                android:layout_marginRight="20sp"
+                android:drawableLeft="@drawable/ic_edit_password"
+                android:drawableRight="@drawable/ic_more"
+                android:drawablePadding="12sp"
+                android:gravity="center_vertical"
+                android:onClick="ubah_sandi"
+                android:text="Ubah Sandi"
+                android:textColor="@color/colorAccent"></TextView>
+
+
+            <TextView
+                android:id="@+id/Data_Transaski"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tx_ubah_psw"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="12sp"
+                android:layout_marginTop="15sp"
+                android:layout_marginRight="20sp"
+                android:drawableLeft="@drawable/ic_notifications"
+                android:drawableRight="@drawable/ic_more"
+                android:drawablePadding="12sp"
+                android:gravity="center_vertical"
+                android:onClick="dataHistory"
+                android:text="History"
+                android:textColor="@color/colorAccent"></TextView>
+
+
+            <TextView
+                android:id="@+id/txt_dukung"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Data_Transaski"
+                android:layout_marginTop="12dp"
+                android:padding="12sp"
+                android:text="Dukung Kami"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/bagi_teman"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_dukung"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="12sp"
+                android:layout_marginTop="15sp"
+                android:layout_marginRight="20sp"
+                android:drawableLeft="@drawable/ic_edit_password"
+                android:drawableRight="@drawable/ic_more"
+                android:drawablePadding="12sp"
+                android:gravity="center_vertical"
+                android:onClick="berbagi_dengan_teman"
+                android:text="Berbagi dengan teman"
+                android:textColor="@color/colorAccent"></TextView>
+
+            <TextView
+                android:id="@+id/beri_masukan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bagi_teman"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="12sp"
+                android:layout_marginTop="15sp"
+                android:layout_marginRight="20sp"
+                android:drawableLeft="@drawable/ic_edit_profile"
+                android:drawableRight="@drawable/ic_more"
+                android:drawablePadding="12sp"
+                android:gravity="center_vertical"
+                android:onClick="kirimMasukan"
+                android:text="Masukan"
+                android:textColor="@color/colorAccent"></TextView>
+
+
+            <!--            <TextView-->
+            <!--                android:id="@+id/btn_keluars"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_below="@+id/beri_masukan"-->
+            <!--                android:layout_centerInParent="true"-->
+            <!--                android:layout_marginLeft="12sp"-->
+            <!--                android:layout_marginTop="15sp"-->
+            <!--                android:layout_marginRight="20sp"-->
+            <!--                android:layout_marginBottom="25sp"-->
+            <!--                android:drawableLeft="@drawable/ic_logout"-->
+            <!--                android:drawablePadding="12sp"-->
+            <!--                android:gravity="center_vertical"-->
+            <!--                -->
+            <!--                android:text="Log-Out"-->
+            <!--                android:textColor="@color/colorAccent"></TextView>-->
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    </ScrollView>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/btn_stroke"
+        android:onClick="close"
+        android:text="Keluar"
+        android:textColor="@color/red"
+        android:textSize="12dp" />
+</RelativeLayout>
+
+

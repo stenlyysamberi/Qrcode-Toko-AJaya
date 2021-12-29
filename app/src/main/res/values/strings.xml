@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">AJAYA</string>
+
+    <string-array name="siswa">
+        <item>Wawan</item>
+        <item>Mamat</item>
+        <item>Bambang</item>
+        <item>Alan Suryajana</item>
+        <item>Darwin Simajuntak</item>
+        <item>Dadang Suradang</item>
+        <item>Eko Sulistyaningtyas</item>
+        <item>Beni Subeni</item>
+    </string-array>
+</resources>

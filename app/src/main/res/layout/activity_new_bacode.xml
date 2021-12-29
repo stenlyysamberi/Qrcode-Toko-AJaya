@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorWhite"
+    android:layout_height="match_parent"
+    tools:context=".NewBacode">
+
+    <include layout="@layout/header"/>
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/bottom_center_background"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:text="New Barcode"
+            android:textColor="@color/colorAccent"
+            android:textSize="25dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:text="Ajaya - Jl. Depapre - Sentani "
+            android:textColor="@color/hit" />
+
+
+
+
+
+        <TextView
+            android:id="@+id/idBarcode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12sp"
+            android:background="@drawable/editbg"
+            android:drawableRight="@drawable/scan"
+            android:gravity="center_vertical"
+            android:hint="ID Barcode"
+            android:padding="15dp"
+            android:textColor="@color/colorAccent"
+            android:textSize="15dp" />
+
+        <EditText
+            android:lines="1"
+            android:id="@+id/produk_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12sp"
+            android:background="@drawable/editbg"
+            android:hint="Product Name"
+            android:padding="15dp"
+            android:textColor="@color/colorAccent"
+            android:textSize="15dp" />
+
+
+        <Spinner
+            android:layout_gravity="center_horizontal"
+            android:spinnerMode="dialog"
+            android:id="@+id/satuan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:background="@drawable/editbg"
+            android:outlineSpotShadowColor="@color/colorAccent"
+            android:padding="15dp"
+            android:textSize="15dp" />
+
+
+
+<!--        <EditText-->
+<!--            android:lines="1"-->
+<!--            android:id="@+id/jenis_satuan"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_margin="12sp"-->
+<!--            android:background="@drawable/editbg"-->
+<!--            android:hint="Jenis"-->
+<!--            android:padding="15dp"-->
+<!--            android:textColor="@color/colorAccent"-->
+<!--            android:textSize="15dp" />-->
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:text="Image"
+            android:textColor="@color/colorAccent"
+            android:textSize="20dp" />
+
+        <TextView
+            android:onClick="open_galery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginBottom="12sp"
+            android:text="Click me, to set image product."
+            android:textColor="@color/hit"
+            android:textSize="15sp" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginTop="1dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12sp"
+            android:layout_marginRight="12sp"
+
+            app:cardCornerRadius="10sp">
+
+            <ScrollView
+                android:overScrollMode="always"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </ScrollView>
+
+
+            <ImageView
+                android:overScrollMode="always"
+                android:scaleType="center"
+                android:padding="40dp"
+                android:src="@drawable/ic_baseline_image_search_24"
+                android:background="@color/colorWhite"
+                android:id="@+id/foto_produk"
+                android:layout_width="match_parent"
+                android:layout_height="140dp" />
+
+
+
+        </androidx.cardview.widget.CardView>
+
+
+        <Button
+            android:id="@+id/btn_simpan_product"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="12sp"
+            android:background="@drawable/btn"
+            android:text="save"
+            android:textColor="@color/colorWhite" />
+
+
+
+    </LinearLayout>
+
+   <RelativeLayout
+       android:gravity="center_horizontal"
+       android:layout_alignParentBottom="true"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+       <TextView
+           android:id="@+id/copyRight"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+
+           android:gravity="center"
+           android:text="develop"
+
+           android:textColor="@color/colorAccent"
+           android:textStyle="bold" />
+
+       <TextView
+
+           android:layout_marginLeft="2sp"
+           android:layout_toRightOf="@+id/copyRight"
+
+           android:layout_marginBottom="25dp"
+           android:textColor="@color/colorAccent"
+
+           android:text="Stenly Samberi"
+
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"/>
+
+   </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:visibility="invisible"
+        android:background="@drawable/progres_style"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+
+</RelativeLayout>

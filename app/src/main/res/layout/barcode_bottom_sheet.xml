@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/barcode_sheet"
+    android:background="@drawable/bottom_sheet_background"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+
+        android:textAlignment="center"
+        android:layout_margin="20sp"
+        android:textSize="20sp"
+        android:textColor="@color/colorAccent"
+        android:text="Network error!"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <View
+        android:layout_marginRight="12sp"
+        android:layout_marginLeft="12sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:background="@color/hit"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+        <RelativeLayout
+            android:layout_marginLeft="12sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+
+                android:src="@drawable/ic_baseline_wifi_off_24"
+                android:id="@+id/error_jar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+            <LinearLayout
+                android:layout_marginRight="12sp"
+                android:layout_marginLeft="12sp"
+                android:layout_centerInParent="true"
+                android:layout_toRightOf="@+id/error_jar"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorAccent"
+                    android:text="yah, internetnya mati"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:textColor="@color/hit"
+                    android:text="Cek koneksi Wi-Fi atau kouta internetmu dan coba lagi, ya."
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:layout_marginTop="12sp"
+        android:layout_marginBottom="12sp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12sp"
+            android:id="@+id/btn_coba_lagi"
+
+            android:textColor="@color/colorWhite"
+            android:text="coba lagi"
+            android:layout_marginBottom="12sp"
+            android:layout_marginTop="15sp"
+            android:padding="12sp"
+            android:background="@drawable/btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</LinearLayout>
